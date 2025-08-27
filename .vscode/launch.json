@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Django Tests",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/manage.py",
+            "args": [
+                "test",
+                "--noinput",
+                "--verbosity=2"
+            ],
+            "django": true,
+            "env": {
+                "DJANGO_SETTINGS_MODULE": "api.settings"
+            }
+        }
+    ]
+}
